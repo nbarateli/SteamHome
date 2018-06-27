@@ -1,4 +1,31 @@
+body {
+  font-family: Calibri, serif;
 
-#container > *{
-    display: block;
+  height: 100%;
+
+}
+
+#container {
+  display: grid;
+  grid-template-areas: '. . . . .' '. . container . .' '. . . . .';
+}
+
+.content {
+  width: 50%;
+
+  display: grid;
+  grid-area: container;
+  grid-template-areas: '. . search . .' '. . fb . .' '. . dota . .';
+}
+
+#search {
+  grid-area: search;
+}
+
+#fb {
+  grid-area: fb;
+}
+
+#dota {
+  grid-area: dota;
 }

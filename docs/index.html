@@ -2,21 +2,36 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Steam Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/reset.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
-    <script src="script/main.js"></script>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Steam Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="styles/reset.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css"/>
+  <script src="script/main.js"></script>
 </head>
 
 <body>
-    <div id='container' align="center">
-        <a href="https://google.com">Google</a>
-        <a href="https://fb.com/messages">FB</a>
-        <a href="https://nbarateli.github.io/DotaGenerator">DotaGenerator</a>
-    </div>
+
+<div id="container">
+  <div class="content">
+    <script>
+        (function () {
+            var cx = '004183743446945379250:lg_ziqwsi5w';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+    <gcse:searchbox></gcse:searchbox>
+    <a id="fb" href="https://fb.com/messages">FB</a>
+    <a id="dota" href="https://nbarateli.github.io/DotaGenerator">DotaGenerator</a>
+  </div>
+</div>
+
 </body>
 
 </html>
