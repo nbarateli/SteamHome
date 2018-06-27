@@ -7,43 +7,31 @@
   <title>Steam Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="styles/reset.css"/>
-  <!--<link rel="stylesheet" type="text/css" media="screen" href="styles/main.css"/>-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css"/>
   <script src="script/main.js"></script>
 </head>
 
 <body>
+<!--<div class="empty">&nbsp;</div>-->
 
 <div id="container">
   <div class="content">
-    <script>
-        (function () {
-            var cx = '004183743446945379250:lg_ziqwsi5w';
-            var gcse = document.createElement('script');
-            gcse.type = 'text/javascript';
-            gcse.async = true;
-            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(gcse, s);
-        })();
-    </script>
-    <gcse:searchbox-only></gcse:searchbox-only>
-    <script>
-        (function () {
-            var cx = '004183743446945379250:lg_ziqwsi5w';
-            var gcse = document.createElement('script');
-            gcse.type = 'text/javascript';
-            gcse.async = true;
-            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(gcse, s);
-        })();
-    </script>
-    <gcse:searchresults-only></gcse:searchresults-only>
+    <div id="search">
+      <form class="example" action="https://google.com/search" autocomplete="off">
+        <input type="text" placeholder="Search.." name="q">
+        <button type="submit"><i class="fas fa-search"></i></button>
+
+      </form>
+      <a href="https://google.com">Google</a>
+    </div>
     <a id="fb" href="https://fb.com/messages">FB</a>
     <a id="dota" href="https://nbarateli.github.io/DotaGenerator">DotaGenerator</a>
   </div>
 </div>
-
 </body>
 
 </html>

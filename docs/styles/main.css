@@ -1,25 +1,72 @@
+html {
+  height: 100%;
+}
+
 body {
   font-family: Calibri, serif;
-
+  background: #8d8d8d;
   height: 100%;
+  display: grid;
+  grid-template-areas: '. . .' '. container .' '. srch .';
+  font-size: x-large;
+}
 
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 70%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+a:visited {
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 #container {
-  display: grid;
-  grid-template-areas: '. . . . .' '. . container . .' '. . . . .';
+  grid-area: container;
+
 }
 
 .content {
-  width: 50%;
-
   display: grid;
-  grid-area: container;
-  grid-template-areas: '. . search . .' '. . fb . .' '. . dota . .';
+  grid-template-areas: '. search .' '. fb .' '. dota .';
 }
 
 #search {
   grid-area: search;
+}
+
+#search > * {
+  display: block;
 }
 
 #fb {
@@ -28,4 +75,13 @@ body {
 
 #dota {
   grid-area: dota;
+}
+
+.empty {
+  grid-area: empty;
+
+}
+
+#srch {
+  grid-area: srch;
 }
