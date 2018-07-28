@@ -1,0 +1,92 @@
+@button-color: #2196F3;
+@button-hover-color: #0b7dda;
+@body-background-color: #2b3134;
+@text-color: #87ac59;
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Calibri, serif;
+  background: @body-background-color;
+  color: @text-color;
+  height: 100%;
+  display: grid;
+  grid-template-areas: '. . .' '. container .' '. srch .';
+  font-size: x-large;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 70%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: @button-color;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: @button-hover-color;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+a:visited {
+  color: @text-color;
+}
+
+a {
+  color: @text-color;
+  text-decoration: none;
+}
+
+#container {
+  grid-area: container;
+
+}
+
+.content {
+  display: grid;
+  grid-template-areas: '. search .' '. fb .' '. dota .';
+}
+
+#search {
+  grid-area: search;
+}
+
+#search > * {
+  display: block;
+}
+
+#fb {
+  grid-area: fb;
+}
+
+#dota {
+  grid-area: dota;
+}
+
+.empty {
+  grid-area: empty;
+
+}
+
+#srch {
+  grid-area: srch;
+}
