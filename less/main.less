@@ -12,7 +12,9 @@ body {
   color: @text-color;
   height: 100%;
   display: grid;
-  grid-template-areas: '. . .' '. container .' '. srch .';
+  grid-template-areas: '. . .' '. clock .' '. container .' '. srch .';
+  grid-row-gap: 1%;
+  grid-template-rows: auto 7.5% auto auto;
   font-size: x-large;
 }
 
@@ -89,4 +91,18 @@ a {
 
 #srch {
   grid-area: srch;
+}
+
+@font-face {
+  font-family: digital;
+  src: url("/fonts/SFDigitalReadout-Heavy.ttf");
+}
+
+.clock {
+  text-align: center;
+  grid-area: clock;
+  color: @text-color;
+  font-size: 60px;
+  font-family: digital, serif;
+  letter-spacing: 7px;
 }
