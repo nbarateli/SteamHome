@@ -2,7 +2,7 @@ function showTime() {
     var date = new Date();
 
     document.getElementById('date').innerText = dateFormat(date, "ddd dd.mm.yyyy");
-    document.getElementById("clock").innerText = dateFormat(date, "hh:MM:ss");
+    document.getElementById("clock").innerText = dateFormat(date, "HH:MM:ss");
 
     setTimeout(showTime, 1000);
 
