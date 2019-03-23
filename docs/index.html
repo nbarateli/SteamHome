@@ -1,39 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Steam Home</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="styles/reset.css"/>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <meta charset="utf-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <title>Steam Home</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="styles/reset.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+          rel="stylesheet">
 
 
-  <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css"/>
-  <script src="script/dateformat.js"></script>
-  <script src="script/main.js"></script>
+    <link href="styles/main.css" media="screen" rel="stylesheet" type="text/css"/>
+    <script src="script/dateformat.js"></script>
+    <script src="script/main.js"></script>
 </head>
 
 <body>
 <div id="date-time">
-  <div id="date" class="clock"></div>
-  <div id='clock' class="clock"></div>
+    <div class="clock" id="date"></div>
+    <div class="clock" id='clock'></div>
 </div>
 <div id="container">
-  <div class="content">
-    <div id="search">
-      <form class="example" action="https://google.com/search" autocomplete="off">
-        <input type="text" placeholder="Search.." name="q">
-        <button type="submit"><i class="fas fa-search"></i></button>
+    <div class="content">
+        <div id="search">
+            <form action="https://google.com/search" autocomplete="off" class="example">
+                <input name="q" placeholder="Search.." type="text">
+                <button type="submit"><i class="fas fa-search"></i></button>
 
-      </form>
-      <a href="https://google.com">Google</a>
+            </form>
+            <a data-key="g" href="https://google.com">Google</a>
+        </div>
+        <a data-key="f" href="https://fb.com/messages" id="fb">FB</a>
+        <a data-key="d" href="https://nbarateli.github.io/DotaGenerator" id="dota">DotaGenerator</a>
     </div>
-    <a id="fb" href="https://fb.com/messages">FB</a>
-    <a id="dota" href="https://nbarateli.github.io/DotaGenerator">DotaGenerator</a>
-  </div>
 </div>
 </body>
 
