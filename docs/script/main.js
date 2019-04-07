@@ -10,13 +10,7 @@ function ready() {
                 href: a.getAttribute('href')
             };
     })
-    document.body.addEventListener('keypress', e => {
-        let key = e.key;
-        if (KEY_MAP.hasOwnProperty(key)) {
-            window.open(KEY_MAP[key].href, '_blank');
-
-        }
-    })
+    
 }
 
 function foreach(items, fn) {
