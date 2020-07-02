@@ -1,6 +1,7 @@
 html {
   height: 100%;
 }
+
 body {
   font-family: Calibri, serif;
   background: #2b3134;
@@ -12,6 +13,7 @@ body {
   grid-template-rows: auto 15% auto auto;
   font-size: x-large;
 }
+
 form.example input[type=text] {
   padding: 10px;
   font-size: 17px;
@@ -20,6 +22,7 @@ form.example input[type=text] {
   width: 70%;
   background: #f1f1f1;
 }
+
 form.example button {
   float: left;
   width: 20%;
@@ -31,54 +34,72 @@ form.example button {
   border-left: none;
   cursor: pointer;
 }
+
 form.example button:hover {
   background: #0b7dda;
 }
+
 form.example::after {
   content: "";
   clear: both;
   display: table;
 }
+
 a:visited {
   color: #87ac59;
 }
+
 a {
   color: #87ac59;
   text-decoration: none;
 }
+
 #container {
   grid-area: container;
 }
+
 .content {
   display: grid;
-  grid-template-areas: '. search .' '. fb .' '. dota .';
+  grid-template-areas: '. search .' '. fb .' '. insta .' '. dota .';
 }
+
 #search {
   grid-area: search;
 }
+
 #search > * {
   display: block;
 }
+
 #fb {
   grid-area: fb;
 }
+
+#insta {
+  grid-area: insta;
+}
+
 #dota {
   grid-area: dota;
 }
+
 .empty {
   grid-area: empty;
 }
+
 #srch {
   grid-area: srch;
 }
+
 @font-face {
   font-family: digital;
-  src: url("/fonts/SFDigitalReadout-Heavy.ttf");
+  src: url("../fonts/SFDigitalReadout-Heavy.ttf");
 }
 
 #date-time {
   grid-area: date;
 }
+
 .clock {
   text-align: center;
   color: #87ac59;
