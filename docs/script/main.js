@@ -1,22 +1,27 @@
-let KEY_MAP = {};
+function fetchLinks() {
+    fetch("/data/links.json").then((j) =>
+        j.json().then(displayLinks))
+}
 
-function ready() {
-    showTime();
-    let items = document.getElementsByTagName('a');
-    foreach(items, a => {
-        if (a.hasAttribute('data-key'))
-            KEY_MAP[a.getAttribute('data-key')] = {
-                key: a.getAttribute('data-key'),
-                href: a.getAttribute('href')
-            };
+function displayLinks(links) {
+    let list = document.getElementById("lnks")
+    foreach(links, (link) => {
+        let item = document.createElement('li')
+        item.innerHTML = `<a href="${link.link}" target="${link.target}">${link.title}</a>`
+        list.appendChild(item)
     })
-    
+
 }
 
 function foreach(items, fn) {
     for (let i = 0; i < items.length; i++) {
         fn(items[i]);
     }
+}
+
+function ready() {
+    showTime();
+    fetchLinks()
 }
 
 function showTime() {

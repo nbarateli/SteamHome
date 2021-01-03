@@ -1,0 +1,27 @@
+[
+  {
+    "link": "https://google.com",
+    "title": "Google",
+    "target": "_parent"
+  },
+  {
+    "link": "https://fb.com/messages",
+    "title": "FB",
+    "target": "_self"
+  },
+  {
+    "link": "https://instagram.com",
+    "title": "Instagram",
+    "target": "_self"
+  },
+  {
+    "link": "https://youtu.be",
+    "title": "Youtube",
+    "target": "_top"
+  },
+  {
+    "link": "https://nbarateli.github.io/DotaGenerator",
+    "title": "DotaGenerator",
+    "target": "_top"
+  }
+]
