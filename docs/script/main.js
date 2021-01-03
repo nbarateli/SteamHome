@@ -1,5 +1,5 @@
 function fetchLinks() {
-    fetch("/data/links.json").then((j) =>
+    fetch("./data/links.json").then((j) =>
         j.json().then(displayLinks))
 }
 
